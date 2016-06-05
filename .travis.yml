@@ -16,4 +16,5 @@ install:
 
 script:
   - grunt build
-  - cd Stout; ./stout
+  - ls
+  - ./Stout/stout
