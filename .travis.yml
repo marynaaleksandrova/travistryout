@@ -1,6 +1,4 @@
-language: 
-  - node_js
-  - go
+language: node_js
 
 go:
   - 1.3
@@ -8,15 +6,12 @@ go:
 
 node_js:
   - "5"
-  - "5.1"
   - "4"
-  - "4.2"
-  - "4.1"
-  - "4.0"
 
 install:
   - npm install
   - npm install -g grunt-cli
+  - go get github.com/tools/godep
 
 script:
   - grunt build
