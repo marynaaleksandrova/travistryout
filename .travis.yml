@@ -15,7 +15,7 @@ install:
   - cd Stout; godep go build -o ../stout src/*.go; cd ..
 
 script:
-  - ls
   - grunt build
-  - ls
-  - ./stout
+
+deploy:
+  - ./stout deploy --bucket travistryout --key $AMAZON_KEY --secret $AMAZON_SECRET --root ./dist
