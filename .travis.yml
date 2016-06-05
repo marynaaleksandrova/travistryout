@@ -18,4 +18,4 @@ script:
   - ls
   - grunt build
   - ls
-  - ./Stout/stout
+  - ./stout
