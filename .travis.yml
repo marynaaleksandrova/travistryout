@@ -11,7 +11,7 @@ install:
   - npm install
   - npm install -g grunt-cli
   - go get github.com/tools/godep
-  - git clone git@github.com:EagerIO/Stout.git
+  - git clone https://github.com/EagerIO/Stout.git
   - cd Stout; godep go build -o ../stout src/*.go
 
 script:
