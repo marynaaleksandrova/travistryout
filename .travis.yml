@@ -16,3 +16,4 @@ install:
 
 script:
   - grunt build
+  - ./stout deploy --bucket travistryout --key AMAZON_KEY --secret AMAZON_SECRET --root ./dist
